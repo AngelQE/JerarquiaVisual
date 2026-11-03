@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo: Jerarquía visual con mapa de calor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body class="con-jerarquia">
+
+  <!-- ===== Navegación (lo primero que se mira) ===== -->
+  <nav class="navbar sticky-top barra">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand marca" href="#" data-track="Logo">CodeLab</a>
+      <ul class="navbar-nav flex-row gap-4 mb-0">
+        <li class="nav-item"><a class="nav-link enlace-nav" href="#" data-track="Menú: Cursos">Cursos</a></li>
+        <li class="nav-item"><a class="nav-link enlace-nav" href="#" data-track="Menú: Blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link enlace-nav" href="#" data-track="Menú: Contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero: punto focal principal ===== -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="etiqueta" data-track="Etiqueta">NUEVO CURSO</span>
+          <h1 class="titulo-display" data-track="Título principal">Aprende Python desde cero</h1>
+          <p class="texto-lead" data-track="Subtítulo">Domina la programación paso a paso con proyectos reales y ejercicios guiados.</p>
+          <p class="precio mt-4" data-track="Precio">S/ 49 <small>pago único</small></p>
+          <div class="d-flex align-items-center flex-wrap gap-3">
+            <button class="btn btn-cta" type="button" data-track="CTA principal">Inscribirme ahora</button>
+            <a href="#" class="enlace-sec" data-track="Ver temario">Ver temario</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="mock-codigo" data-track="Imagen decorativa" aria-hidden="true">
+            <div class="mock-barra"><span></span><span></span><span></span></div>
+<pre><code><span class="c"># Tu primer programa</span>
+<span class="k">nombre</span> = <span class="s">"Mundo"</span>
+<span class="k">print</span>(<span class="s">f"Hola, {nombre}"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Cifras destacadas ===== -->
+  <section class="seccion seccion-cifras">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4"><div class="cifra" data-track="Cifra: estudiantes">+1.200 <span>estudiantes</span></div></div>
+        <div class="col-md-4"><div class="cifra" data-track="Cifra: clases">20 <span>clases</span></div></div>
+        <div class="col-md-4"><div class="cifra" data-track="Cifra: rating">4.9 ★ <span>valoración</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Beneficios ===== -->
+  <section class="seccion">
+    <div class="container">
+      <h2 class="titulo-seccion" data-track="Título de beneficios">Lo que vas a lograr</h2>
+      <p class="sub-seccion" data-track="Subtítulo de beneficios">Todo lo necesario para empezar a programar con confianza.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="tarjeta" data-track="Tarjeta: Clases">
+            <span class="icono">🎬</span>
+            <h3>20 clases en video</h3>
+            <p>Aprende a tu ritmo, con explicaciones cortas y claras.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="tarjeta" data-track="Tarjeta: Ejercicios">
+            <span class="icono">🧪</span>
+            <h3>Ejercicios prácticos</h3>
+            <p>Practica en cada módulo con retos que suben de nivel.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="tarjeta" data-track="Tarjeta: Certificado">
+            <span class="icono">🎓</span>
+            <h3>Certificado al terminar</h3>
+            <p>Valida lo aprendido con un certificado digital.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonio ===== -->
+  <section class="seccion fondo-claro">
+    <div class="container">
+      <figure class="testimonio" data-track="Testimonio">
+        <blockquote>“Pasé de no saber nada a hacer mi primer programa en dos semanas.”</blockquote>
+        <figcaption>Ana R., estudiante</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Cierre / CTA final ===== -->
+  <section class="seccion cta-final">
+    <div class="container">
+      <div class="bloque text-center">
+        <h2 class="titulo-seccion" data-track="Título de cierre">¿Listo para empezar?</h2>
+        <p class="sub-seccion" data-track="Texto de cierre">Únete hoy y empieza tu primera clase en minutos.</p>
+        <button class="btn btn-cta" type="button" data-track="CTA final">Empezar hoy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pie (lo menos importante) ===== -->
+  <footer class="pie">
+    <div class="container d-flex flex-wrap gap-3">
+      <a href="#" data-track="Pie: Términos">Términos y condiciones</a>
+      <a href="#" data-track="Pie: Privacidad">Privacidad</a>
+      <a href="#" data-track="Pie: Ayuda">Ayuda</a>
+    </div>
+  </footer>
+
+  <!-- ===== Capas del mapa de calor ===== -->
+  <div id="capa-calor" aria-hidden="true"></div>
+  <div id="capa-scroll" aria-hidden="true"></div>
+
+  <!-- ===== Panel de la demo ===== -->
+  <aside id="panel" class="panel-demo" aria-label="Panel de la demo">
+    <button id="btnPanel" class="btn btn-dark w-100 rounded-0" type="button">📊 Panel de la demo</button>
+    <div class="cuerpo">
+      <p class="fw-semibold mb-1">1. Versión de la página</p>
+      <div class="btn-group w-100 mb-3" role="group" aria-label="Versión">
+        <input type="radio" class="btn-check" name="modo" id="modoCon" value="con" checked>
+        <label class="btn btn-outline-dark btn-sm" for="modoCon">Con jerarquía</label>
+        <input type="radio" class="btn-check" name="modo" id="modoSin" value="sin">
+        <label class="btn btn-outline-dark btn-sm" for="modoSin">Sin jerarquía</label>
+      </div>
+
+      <p class="fw-semibold mb-1">2. Mapa de calor</p>
+      <div class="btn-group w-100 mb-3" role="group" aria-label="Tipo de mapa">
+        <input type="radio" class="btn-check" name="vista" id="vNinguna" value="ninguna" checked>
+        <label class="btn btn-outline-dark btn-sm" for="vNinguna">Ninguno</label>
+        <input type="radio" class="btn-check" name="vista" id="vClics" value="clics">
+        <label class="btn btn-outline-dark btn-sm" for="vClics">Clics</label>
+        <input type="radio" class="btn-check" name="vista" id="vMov" value="movimiento">
+        <label class="btn btn-outline-dark btn-sm" for="vMov">Mouse</label>
+        <input type="radio" class="btn-check" name="vista" id="vScroll" value="scroll">
+        <label class="btn btn-outline-dark btn-sm" for="vScroll">Scroll</label>
+      </div>
+
+      <p class="mb-1">Clics en esta versión: <strong id="stClics">0</strong></p>
+      <p class="mb-1">Scroll máximo alcanzado</p>
+      <div class="progress mb-3" role="progressbar" aria-label="Scroll máximo">
+        <div id="stBarra" class="progress-bar bg-dark" style="width:0%; min-width:2.5rem">0%</div>
+      </div>
+
+      <p class="fw-semibold mb-1">Clics por elemento</p>
+      <ul id="ranking" class="list-group list-group-flush mb-3"></ul>
+
+      <div id="aviso" class="alert alert-warning py-2 d-none">
+        No cargó heatmap.js. Descarga <code>heatmap.min.js</code> y ponlo junto a los archivos.
+      </div>
+      <button id="btnReiniciar" class="btn btn-sm btn-outline-secondary w-100" type="button">Reiniciar datos</button>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/heatmap.js@2.0.5/build/heatmap.min.js"></script>
+  <script src="script.js?v=2"></script>
+</body>
+</html>
